@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <title>겟 투게더</title>
+</head>
+    <div class="header_line_wrap">
+      <hr class="mgn_layout_full header_line header_line_white">
+    </div>
+
+    <!-- LNB & 로고 & GNB -->
+    <div class="gnb_green mgn_layout_full">
+
+      <!-- LNB -->
+      <div class="lnb_wrap mgn_layout_fixed">
+        <nav class="lnb_nav">
+          <ul>
+            <li><a href="study.html" class="bg_col_green">스터디</a></li>
+            <li><a href="competition.html" class="bg_col_white">공모전</a></li>
+            <li><a href="club.html" class="bg_col_white">동아리</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="gnb_wrap mgn_layout_fixed mgn-pd_0">
+        <!-- 로고 -->
+        <div class="logo">
+          <h1><a href="index.html" class="logo_white">GetTogether</a></h1>
+        </div>
+        <!-- GNB -->
+        <nav class="gnb_nav">
+          <ul>
+            <li><a href="#">My page</a></li>
+            <li>
+              <% if user_signed_in? %>
+              <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+            <% else %>
+              <%= link_to 'Login', new_user_session_path %>
+              <%= link_to '회원가입', new_user_registration_path %>
+            <% end %>
+            </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Container -->
+  <div>검색창(Gem 이용)</div>
+  <br><br>
+  <div class="club_menu">
+    <ul>
+      <li><a href="#" class="club_menu_click">전체</a></li>
+      <li><a href="#">면접</a></li>
+      <li><a href="#">영어</a></li>
+      <li><a href="#">제2외국어</a></li>
+      <li><a href="#">NCS</a></li>
+      <li><a href="#">컴퓨터</a></li>
+      <li><a href="#">독서</a></li>
+      <li><a href="#">기타</a></li>
+    </ul>
+  </div>
+  <div>
+    <hr class="club_hr">
+  </div>
+
+
+  <div class="club_content1 mgn_layout_fixed">
+
+  </div>
+
+  <!-- 검색 기능 -->
+  <div class="study_btn_wrap mgn_layout_fixed">
+    <span>유형</span>
+    <label>
+      <input type="checkbox">
+      전체
+    </label>
+    <label>
+      <input type="checkbox">
+      토익
+    </label>
+    <label>
+      <input type="checkbox">
+      토플
+    </label>
+    <label>
+      <input type="checkbox">
+      토스
+    </label>
+    <label>
+      <input type="checkbox">
+      OPic
+    </label>
+    <label>
+      <input type="checkbox">
+      기타
+    </label>
+    <input type="submit" value="확인" class="study_submit_btn">
+
+  </div>
+
+
+  <!-- 게시판 -->
+  <div class="study_board mgn_layout_fixed">
+    <h1>모집중인 스터디</h1>
+    <table class="club_board">
+      <thead>
+        <tr>
+          <th class="sutdy_col1">No.</th>
+          <th class="study_col2">제목</th>
+          <th class="study_col3">작성자</th>
+          <th class="study_col4">작성일</th>
+          <th class="study_col5">여석</th>
+          <th class="study_col6">조회수</th>
+        </tr>
+      </thead>
+      <% number = 0 %>
+      <% @notes.each do |note| %>
+        <% number = number + 1 %>
+      <tbody>
+            <tr>
+              <td>
+                <%= number %>
+              </td>
+              <td>
+                <a href='/notes/<%= note.id %>'> <%= note.title %> </a>
+              </td>
+              <td>
+                <%= note.user.name%>
+              </td>
+              <td>
+                <%= note.created_at.strftime("%Y-%m-%d") %>
+              </td>
+              <td>
+                3/4
+              </td>
+              <td>
+                13
+              </td>
+            </tr>
+      </tbody>
+      <% end %>
+    </table>
+  </div>
+  
+<a href='/notes/new'>새 글 작성</a>
+<br>
+
+
+
+<br><br>
+
+
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p class="mgn_layout_fixed">
+      고객행복센터 1670-6250 오전 9시 - 새벽 3시, 점심시간: 오후 12시 - 오후 1시<br> (주) 위드이노베이션<br><br> 주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층<br> 대표이사 : 심명섭 | 사업자등록번호: 742-86-00224<br> 통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호<br> 전화번호 : 1670-6250<br> 전자우편주소 : help@goodchoice.kr<br>      Copyright WITHINNOVATION Corp. All rights reserved.<br>
+    </p>
+  </footer>
+
+
+
+
+</body>
+
+</html>

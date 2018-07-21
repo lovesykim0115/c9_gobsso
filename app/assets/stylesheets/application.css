@@ -1,0 +1,1014 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.mgn-pd_0 {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 고정 본문 영역 layout 설정*/
+.mgn_layout_fixed {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mgn_layout_full {
+  width: 100%;
+  margin: 0;
+}
+
+/* 맨 윗줄 */
+.header_line {
+  margin: 0;
+  border: 3px solid;
+}
+
+.header_line_green {
+  border-color: rgba(171, 212, 151);
+}
+.header_line_white {
+  border-color: white;
+}
+
+
+.header_box p {
+float: right;
+background-color: rgba(171, 212, 151);
+margin-top: 0;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 2px;
+padding-bottom: 2px;
+font-size: 12px;
+color: white;
+}
+
+.header_line_wrap:after {
+content:"";
+display: block;
+clear: both;
+}
+
+
+/* Header Type1*/
+.gnb_wrap:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.gnb_wrap {
+  padding-bottom: 10px;
+}
+
+.gnb_green {
+  background-color: rgba(171, 212, 151);
+}
+
+  /* 로고 */
+.logo h1 a {
+  text-decoration: none;
+}
+
+.logo_green {
+  color: rgba(171, 212, 151);
+}
+
+.logo_white {
+  color: white;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+
+.logo {
+  float: left;
+  width: auto;
+}
+
+  /* gnb_nav 메뉴 */
+.gnb_nav {
+  float: right;
+  width: auto;
+}
+
+.gnb_nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gnb_nav li a {
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 12px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.gnb_nav li a:hover {
+  background-color: #eeeeee;
+}
+
+.gnb_nav ul:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.gnb_nav li {
+  float: left;
+  width: auto;
+}
+
+/* lnb_nav 메뉴 */
+.lnb_nav:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.lnb_nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lnb_nav li a {
+  display: block;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 0;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+.lnb_nav li a:hover {
+  background-color: #eeeeee;
+}
+
+.lnb_nav ul:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.lnb_nav li {
+  float: right;
+  width: auto;
+}
+
+.bg_col_green {
+  background-color: rgba(171, 212, 151);
+}
+
+.bg_col_white {
+  background-color: white;
+}
+
+/* 주 메뉴 3개 */
+.bg_container_col {
+  background: linear-gradient(
+    to bottom,
+    white 0%,
+    white 60%,
+    rgba(231, 231, 231) 60%,
+    rgba(231, 231, 231) 100%
+    );
+}
+
+.main-banner {
+  background-image: url('img/main-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 92px;
+
+}
+
+.container_nav_wrap {
+  padding-top: 25%;
+}
+
+.container_nav_wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.container_nav {
+  float: left;
+  width: 31%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.43);
+  padding: 1%;
+}
+
+.container_nav_v1, .container_nav_v2 {
+  margin-right: 0.5%;
+}
+
+
+.container_nav i {
+  font-size: 320%;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  float: left;
+  margin-right: 30px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-text {
+  float: left;
+  margin-top: 10px;
+}
+
+.container_nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-text {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+  color: white;
+}
+
+.sub-text {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0;
+  color: white;
+}
+
+
+
+
+
+
+/* Contents */
+#content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(231, 231, 231);
+}
+
+
+
+
+/* Footer */
+#footer {
+  background-color: rgba(171, 212, 151);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: black;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+
+/* club.html */
+
+
+.club_menu {
+  text-align: center;
+  margin: 0;
+  height: 20px;
+}
+
+.club_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  height: 25px;
+}
+
+.club_menu li a {
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+
+}
+
+.club_menu_click {
+  border-bottom: 5px solid black;
+  font-weight: bold;
+}
+
+
+.club_menu ul:after {
+  content: "";
+  display: block;
+  clear: both
+}
+
+.club_menu li {
+  float: left;
+  width: auto
+}
+
+.club_hr {
+    margin: 0;
+    border: 3px solid rgba(231, 231, 231);
+    margin-top: 10px;
+}
+
+/* 동아리 광고판(배너 슬라이드) */
+
+.club_ad {
+  float: left;
+  width: 425px;
+  /* border: 4px solid rgba(231, 231, 231); */
+  margin-right: 18px;
+  margin-top: 18px;
+  padding: 0;
+  /* height: 280px; */
+}
+
+.ad-wrap {
+  content: "";
+  display: block;
+  clear: both;
+  padding-top: 10px;
+}
+
+.ad-component-1 {
+  float: left;
+  width: 45%;
+  /* height: 300px; */
+  margin-left: 3%;
+  margin-right: 2%;
+  height: 230px;
+}
+
+.ad-component-2 {
+  float: left;
+  width: 45%;
+  margin-left: 2%;
+  margin-right: 3%;
+  height: 230px;
+}
+
+/* 동아리 랭킹창 */
+
+.club_ranking {
+  float: left;
+  width: 290px;
+  border: 3px solid rgba(231, 231, 231);
+  padding: 20px;
+  position: relative;
+  margin-left: 18px;
+  margin-top: 18px;
+  height: 238px;
+  margin-bottom: 30px;
+}
+
+.club_ranking h1 {
+  margin: 0 0 25px 0;
+  font-size: 18px;
+
+}
+
+.btn {
+  background-color: inherit;
+  padding: 1px;
+  font-size: 10px;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+}
+
+.btn:hover {
+  background: #eee;
+}
+
+.club_ranking p {
+  border-bottom: 4px solid rgba(231, 231, 231);
+  margin-bottom: 23px;
+}
+
+.col1 {
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+  padding-right: 10px;
+}
+
+.col2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: yellow;
+  padding-right: 10px;
+}
+
+.col3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: green;
+  padding-right: 10px;
+}
+
+.col4 {
+  position: absolute;
+  right: 20px;
+  text-decoration: none;
+  padding-bottom: 15px;
+  color: black;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+}
+
+.img-board {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.club_content1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.club_category {
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+  margin: 2px;
+}
+
+.club_category_1 {
+  background-color: lightgreen;
+}
+
+.club_category_2 {
+  background-color: orange;
+}
+
+
+/* 게시판 */
+.btn2_wrap {
+  display: block;
+  text-align: right;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.float_right {
+  float: right;
+}
+
+.btn2 {
+  background-color: inherit;
+  padding: 1px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.club_board {
+    width: 100%;
+    border: 3px solid rgba(231, 231, 231);
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.club_board tbody:nth-child(2n){
+  background-color: rgba(231, 231, 231);
+}
+
+.club_board th, td {
+    padding: 12px;
+    text-align: center;
+    height: 10px;
+}
+
+.club_board th {
+    padding: 15px;
+}
+
+.club_board img {
+  vertical-align: middle;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.club_board .col-1 {
+    width: 80%;
+    text-align: left;
+}
+
+.club_board .col-2 {
+    width: 10%;
+}
+
+
+/* 스터디  */
+.study_btn_wrap {
+  border: 1px solid rgba(171, 212, 151);
+  margin-top: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.study_btn_wrap span {
+  display: inline-block;
+  color: white;
+  border: 3px solid rgba(171, 212, 151);
+  background-color: rgba(171, 212, 151);
+  padding: 4px;
+  font-size: 14px;
+}
+
+.study_submit_btn {
+  color: white;
+  background-color: rgba(171, 212, 151);
+  text-align: right;
+  position: absolute;
+  right: 7px;
+  top: 3px;
+}
+
+.study_board h1 {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.study_col1 {
+
+}
+.study_col2 {
+  width: 50%;
+}
+.study_col3 {
+
+}
+.study_col4 {
+
+}
+.study_col5 {
+
+}
+.study_col6 {
+
+}
+
+
+/* club-content.html */
+.club_poster {
+  float: left;
+  width: 180px;
+  border: 1px solid  rgba(171, 212, 151);
+  margin-top: 18px;
+  padding: 10px;
+  margin-right: -1px;
+  height: 258px;
+}
+
+.img_poster {
+  width: 180px;
+  height: 250px;
+}
+
+.club_poster_info {
+  float: left;
+  width: 540px;
+  border: 1px solid rgba(171, 212, 151);
+  padding: 20px;
+  position: relative;
+  margin-top: 18px;
+  height: 238px;
+  margin-bottom: 30px;
+}
+
+.club_poster_info h1 {
+  font-size: 25px;
+  margin: 5px;
+}
+
+.club_dday_label {
+  font-size: 12px;
+  font-weight: normal;
+  vertical-align: middle;
+  background-color: rgba(231, 231, 231);
+  border-radius: 7px;
+  padding: 4px 7px 4px 7px;
+}
+
+.sharing_label i {
+  color: gray;
+  margin-right: 3px;
+}
+
+.heart_label i {
+  color: red;
+  margin-right: 3px;
+}
+
+
+.club_label_wrap1 {
+  float: right;
+}
+
+.club_label_wrap1 a {
+  text-decoration: none;
+}
+
+.sharing_label:hover i {
+  color: black;
+}
+
+.sharing_label:hover a {
+  font-weight: bold;
+}
+
+.heart_label:hover i {
+  font-weight: bold;
+}
+
+.heart_label:hover a {
+  font-weight: bold;
+}
+
+.sharing_label, .heart_label {
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+.info_content1 {
+  float: left;
+  width: 40%;
+}
+
+.info_content2 {
+  float: left;
+  width: 60%;
+}
+
+.info_content_wrap:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.info_content_wrap h2 {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+.info_content_wrap p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.poster_submit {
+  background-color: rgba(171, 212, 151);
+  color: white;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* 포스터 상세 정보 */
+.poster_details_wrap {
+  border: 1px solid rgba(171, 212, 151);
+}
+
+.poster_menu {
+  border-bottom: 1px solid rgba(171, 212, 151);
+}
+
+.poster_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.poster_menu li a {
+  display: block;
+  padding: 5px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.poster_menu ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.poster_menu li {
+  float:left;
+  width: auto;
+  border-right: 1px solid rgba(171, 212, 151);
+  width: 80px;
+  text-align: center;
+}
+
+.poster_details {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.poster_details h1 {
+  font-size: 18px;
+}
+
+.poster_details p {
+  font-size: 12px;
+}
+
+.poster_menu .border_bottom_white {
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+}
+
+/* 댓글 기능 */
+.comment_wrap {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  background-color: rgba(231, 231, 231);
+  border-radius: 5px;
+}
+
+.writing_comment_btn {
+  display: inline-block;
+  background-color: skyblue;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+}
+
+.comment_content {
+  background-color: white;
+  margin: 10px;
+  padding: 15px;
+
+}
+
+.comment_content h1 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.comment_content h2 {
+  font-size: 13px;
+  font-weight: normal;
+  color: gray;
+  margin: 0;
+  margin-top: 5px;
+}
+.arrow_label {
+  float: left;
+  width: auto;
+  margin-left: 10px;
+  font-size: 25px;
+  color: gray;
+  margin-right: 10px;
+}
+
+.inner_comment {
+  margin-top: 10px;
+}
+
+.inner_comment_wrap {
+  background-color: rgba(231, 231, 231);
+  padding: 7px;
+  border-radius: 25px;
+  position: relative;
+  margin-right: 25%;
+  margin-left: 5%;
+}
+
+.inner_comment_content {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 6px 10px 6px 10px;
+}
+
+.inner_comment_content::placeholder {
+  color: gray;
+  font-size: 12.5px;
+}
+
+.inner_comment_btn {
+  border: none;
+  background-color: inherit;
+  position: absolute;
+  right: 2%;
+  top: 30%;
+  color: gray;
+}
+
+.inner_comment_btn:hover {
+  background-color: darkgray;
+}
+
+/* competition.html */
+.recommend_competition {
+  float: left;
+  width: 418px;
+  border: 4px solid rgba(231, 231, 231);
+  /* margin-right: 18px; */
+  margin-top: 18px;
+  padding: 10px;
+  height: 256px;
+}
+
+.recommend_competition h1{
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+
+}
+
+.competition_img1 {
+  border: 1px solid rgba(231, 231, 231);
+  float: left;
+  width: 125px;
+  height: 175px;
+  padding: 5px;
+  margin-left: 8%;
+}
+
+.competition_img1 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.competition_content {
+  margin-left: 30px;
+  display: inline-block;
+
+}
+
+.competition_content hr {
+  border: 1px solid rgba(231, 231, 231);
+}
+
+.competition_content h2 {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  line-height: 5px;
+  margin-bottom: 15px;
+
+}
+
+.competition_content span {
+  display: inline-block;
+  font-weight: bold;
+  width: 70px;
+}
+
+.competition_content p {
+  font-size: 11px;
+}
+
+.competition_dday {
+  color: red;
+  font-weight: bold;
+}
+
+.competition_board h1 {
+  font-size: 18px;
+}
+
+
+.comp_box_wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+.comp_box_outer {
+  border: 4px solid rgba(231, 231, 231);
+  border-radius: 3px;
+  float: left;
+  width: 170px;
+  height: 280px;
+  padding-left: 13px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin: 2px;
+
+}
+
+
+.comp_img_box {
+  display: inline-block;
+  border-radius: 3px;
+  width: 85%;
+  height: 185px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.comp_img_box img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 5px;
+  border: 1px solid rgba(231, 231, 231);
+}
+
+.comp_box_outer h2 {
+  font-size: 13px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.competition_category {
+  color: white;
+  padding: 3px 7px 3px 7px;
+  font-size: 12px;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.competition_category_1 {
+  background-color: lightgreen;
+}
+
+.comp_board_dday {
+  color: rgba(171, 212, 151);
+  font-weight: bold;
+  margin-right: 13px;
+}
+
+.comp_board_watching {
+  color: rgba(200, 200, 200);
+  font-weight: bold;
+}
