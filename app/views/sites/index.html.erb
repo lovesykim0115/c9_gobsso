@@ -1,0 +1,53 @@
+<!-- Container -->
+  <div id="container">
+      <!-- 주 메뉴 3개 -->
+      <div class="bg_container_col">
+        <div class="container_nav_wrap main-banner mgn_layout_fixed">
+          <%= link_to club_path do %>
+            <div class="container_nav container_nav_v1">
+              <div class="menu-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="menu-text">
+                <p class="main-text">동아리</p>
+                <p class="sub-text">모집&지원</p>
+              </div>
+            </div>
+          <% end %>
+          <%= link_to competition_path do %>
+            <div class="container_nav container_nav_v2">
+              <div class="menu-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="menu-text">
+                <p class="main-text">공모전</p>
+                <p class="sub-text">모집&지원</p>
+              </div>
+            </div>
+          <% end %>
+          <%= link_to study_path do %>
+            <div class="container_nav container_nav_v3">
+              <div class="menu-icon">
+                <i class="fas fa-book fa-fw"></i>
+              </div>
+              <div class="menu-text">
+                <p class="main-text">스터디</p>
+                <p class="sub-text">모집&지원</p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+
+
+  <!-- Contents -->
+    <div id="content">
+      <div class="mgn_layout_fixed">
+        <span style="padding-right: 8px;"><strong>공지사항 </strong></span>
+        <span style="font-size: 14px;">[공모전] 겟투게더 참가팀 이번 공모전에서 1등 수상</span>
+      </div>
+
+    </div>
+
+  </div>
