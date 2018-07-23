@@ -1012,3 +1012,7 @@ clear: both;
   color: rgba(200, 200, 200);
   font-weight: bold;
 }
+
+.comp_content_img {
+  height: 100%;
+}

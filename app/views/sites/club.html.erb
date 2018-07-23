@@ -1,0 +1,145 @@
+<% content_for :bxslider_js do %>
+  <!-- 박스 슬라이더 -->
+  <link rel="stylesheet" href="/css/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/js/jquery.bxslider.min.js"></script>
+<% end %>
+
+
+
+  <!-- Container -->
+  <div>검색창(Gem 이용)</div>
+  <br><br>
+  <div class="club_menu">
+    <ul>
+      <li><a href="#" class="club_menu_click">전체</a></li>
+      <li><a href="#">문화/예술/공연</a></li>
+      <li><a href="#">봉사/사회활동</a></li>
+      <li><a href="#">학술/교양</a></li>
+      <li><a href="#">기타</a></li>
+    </ul>
+  </div>
+  <div>
+    <hr class="club_hr">
+  </div>
+
+
+  <div class="club_content1 mgn_layout_fixed">
+    <!-- 광고  -->
+    <!-- <div class="club_ad">
+      <img src="/assets/1.jpg" alt="a" class="img_ad">
+    </div> -->
+    <div class="club_ad">
+      <div class="bxslider">
+        <div class="ad-wrap">
+          <img src="/assets/1.jpg" title="Funky roots" class="ad-component-1">
+          <img src="/assets/1.jpg" title="Funky roots" class="ad-component-2">
+        </div>
+        <div class="ad-wrap">
+          <img src="/assets/2.jpg" title="Funky roots" class="ad-component-1">
+          <img src="/assets/2.jpg" title="Funky roots" class="ad-component-2">
+        </div>
+        <div class="ad-wrap">
+          <img src="/assets/3.jpg" title="Funky roots" class="ad-component-1">
+          <img src="/assets/3.jpg" title="Funky roots" class="ad-component-2">
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- 랭킹 -->
+    <div class="club_ranking">
+      <h1>
+        동아리 랭킹
+        <button class="btn">조회순 <i class="fas fa-caret-down"></i></button>
+      </h1>
+      <p>
+        <span class="col1">1</span> 멋쟁이 사자처럼
+        <img src="/assets/1.jpg" alt="a" class="img-circle">
+      </p>
+      <p>
+        <span class="col2">2</span> 투빅스
+        <img src="/assets/1.jpg" alt="a" class="img-circle">
+      </p>
+      <p>
+        <span class="col3">3</span> 여행 동아리
+        <img src="/assets/1.jpg" alt="a" class="img-circle">
+      </p>
+      <a href="#" class="col4">
+        더보기
+      </a>
+      <br>
+    </div>
+  </div>
+
+
+  <!-- 게시판 -->
+  <div class="mgn_layout_fixed">
+    <div class="btn2_wrap">
+      <button class="btn2">조회수 <i class="fas fa-caret-down"></i></button>
+      <button class="btn2">신입생 <i class="fas fa-caret-down"></i></button>
+    </div>
+
+    <table class="club_board">
+      <thead>
+        <tr>
+          <th class="col-1">모집중인 동아리</th>
+          <th class="col-2">기간</th>
+          <th>조회수</th>
+        </tr>
+      </thead>
+
+      <tbody>
+            <tr>
+              <td class="text-left">
+                <img src="/assets/1.jpg" alt="a" class="img-board">
+                멋쟁이 사자처럼 운영진 모집
+                <span class="club_category club_category_1">
+                  공식 동아리
+                </span>
+                <span class="club_category club_category_2">
+                  동방
+                </span>
+              </td>
+              <td>
+                D-1
+              </td>
+              <td>
+                273
+              </td>
+            </tr>
+      </tbody>
+      <tbody>
+            <tr>
+              <td class="text-left">
+                <img src="/assets/1.jpg" alt="a" class="img-board">
+                멋쟁이 사자처럼 8기 모집
+              </td>
+              <td>
+                D-1
+              </td>
+              <td>
+                212
+              </td>
+            </tr>
+      </tbody>
+      <tbody>
+            <tr>
+              <td class="text-left">
+                <img src="/assets/1.jpg" alt="a" class="img-board">
+                PPT 동아리 모집
+              </td>
+              <td>
+                D-1
+              </td>
+              <td>
+                111
+              </td>
+            </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+

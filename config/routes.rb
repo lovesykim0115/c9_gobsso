@@ -28,6 +28,16 @@ Rails.application.routes.draw do
   #### 
   get '/study' => 'notes#study'
   
+  
+  
+  #### site
+  get '/club' => 'sites#club'
+  get '/club_content' => 'sites#club_content'
+  get '/competition' => 'sites#competition'
+  
+  ### 메인 페이지
+  root to: 'sites#index'
+  
 end
 
 
