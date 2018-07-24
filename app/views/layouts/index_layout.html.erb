@@ -2,23 +2,19 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
+  <!--레일즈 기본 내장 코드-->
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <link rel="stylesheet" href="/assets/theme.css">
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,900" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
   <!-- 제이쿼리 -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/script.js"></script>
-
-  <!-- 박스 슬라이더 -->
-  <link rel="stylesheet" href="/css/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="/js/jquery.bxslider.min.js"></script>
   
-  <!--레일즈 기본 내장 코드-->
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
   
   <title>겟 투게더</title>
 </head>
@@ -28,9 +24,9 @@
     <header id="header">
     <!-- 맨 위 선  -->
       <div class="header_line_wrap">
-        <hr class="mgn_layout_full header_line header_line_green">
+        <hr class="mgn_layout_full header_line border-color1">
         <div class="header_box mgn_layout_fixed">
-          <p class="mgn_0">
+          <p class="mgn_0 bg-color1">
             문의 twin9786@naver.com
           </p>
         </div>
@@ -42,7 +38,7 @@
         <div class="logo">
           <h1>
             <%= link_to 'Get<i class="far fa-handshake"></i>Together'.html_safe, 
-            root_path, :class => "logo_green" %>
+            root_path, :class => "color1" %>
           </h1>
         </div>
         <!-- 내비게이션 -->
@@ -61,7 +57,7 @@
 
 <br><br>
 <!-- Footer -->
-  <footer id="footer">
+  <footer id="footer" class="bg-color1">
       <p class="mgn_layout_fixed">
         고객행복센터 1670-6250 오전 9시 - 새벽 3시, 점심시간: 오후 12시 - 오후 1시<br>
         (주) 위드이노베이션<br><br>
@@ -76,3 +72,4 @@
 
 </body>
 </html>
+

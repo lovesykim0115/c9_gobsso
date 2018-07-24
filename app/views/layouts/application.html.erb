@@ -2,20 +2,27 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
-  <!-- 제이쿼리 -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/script.js"></script>
   
+  <!--bxslider-->
   <%= yield :bxslider_js %>
   
   <!--레일즈 기본 내장 코드-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
+  <link rel="stylesheet" href="/assets/theme.css">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+  <!-- 제이쿼리 -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>
+  
+
+  
+
   
 
   
@@ -31,7 +38,7 @@
     </div>
 
     <!-- LNB & 로고 & GNB -->
-    <div class="gnb_green mgn_layout_full">
+    <div class="bg-color1 mgn_layout_full">
 
       <!-- LNB -->
       <div class="lnb_wrap mgn_layout_fixed">
@@ -39,7 +46,7 @@
           <ul>
             <li><%= link_to '스터디',  study_path, :class => "bg_col_white" %></li>
             <li><%= link_to '공모전',  competition_path, :class => "bg_col_white" %></li>
-            <li><%= link_to '동아리',  club_path, :class => "bg_col_green" %></li>
+            <li><%= link_to '동아리',  club_path, :class => "bg-color1" %></li>
           </ul>
         </nav>
       </div>
@@ -69,7 +76,7 @@
 
 <br><br>
 <!-- Footer -->
-  <footer id="footer">
+  <footer id="footer" class="bg-color1">
       <p class="mgn_layout_fixed">
         고객행복센터 1670-6250 오전 9시 - 새벽 3시, 점심시간: 오후 12시 - 오후 1시<br>
         (주) 위드이노베이션<br><br>

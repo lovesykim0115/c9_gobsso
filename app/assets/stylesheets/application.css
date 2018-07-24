@@ -45,9 +45,11 @@ body {
   border: 3px solid;
 }
 
-.header_line_green {
-  border-color: rgba(171, 212, 151);
+.header_line2 {
+  border-color: red;
 }
+
+
 .header_line_white {
   border-color: white;
 }
@@ -55,7 +57,6 @@ body {
 
 .header_box p {
 float: right;
-background-color: rgba(171, 212, 151);
 margin-top: 0;
 padding-left: 10px;
 padding-right: 10px;
@@ -83,18 +84,12 @@ clear: both;
   padding-bottom: 10px;
 }
 
-.gnb_green {
-  background-color: rgba(171, 212, 151);
-}
 
   /* 로고 */
 .logo h1 a {
   text-decoration: none;
 }
 
-.logo_green {
-  color: rgba(171, 212, 151);
-}
 
 .logo_white {
   color: white;
@@ -187,9 +182,6 @@ clear: both;
   width: auto;
 }
 
-.bg_col_green {
-  background-color: rgba(171, 212, 151);
-}
 
 .bg_col_white {
   background-color: white;
@@ -288,7 +280,6 @@ clear: both;
 #content {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgba(231, 231, 231);
 }
 
 
@@ -296,7 +287,6 @@ clear: both;
 
 /* Footer */
 #footer {
-  background-color: rgba(171, 212, 151);
   padding-top: 15px;
   padding-bottom: 15px;
   color: black;
@@ -352,7 +342,7 @@ clear: both;
 
 .club_hr {
     margin: 0;
-    border: 3px solid rgba(231, 231, 231);
+    border: 3px solid;
     margin-top: 10px;
 }
 
@@ -397,7 +387,7 @@ clear: both;
 .club_ranking {
   float: left;
   width: 290px;
-  border: 3px solid rgba(231, 231, 231);
+  border: 3px solid;
   padding: 20px;
   position: relative;
   margin-left: 18px;
@@ -517,7 +507,7 @@ clear: both;
 
 .club_board {
     width: 100%;
-    border: 3px solid rgba(231, 231, 231);
+    border: 3px solid;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
@@ -563,7 +553,7 @@ clear: both;
 
 /* 스터디  */
 .study_btn_wrap {
-  border: 1px solid rgba(171, 212, 151);
+  border: 1px solid;
   margin-top: 20px;
   margin-top: 20px;
   position: relative;
@@ -572,15 +562,13 @@ clear: both;
 .study_btn_wrap span {
   display: inline-block;
   color: white;
-  border: 3px solid rgba(171, 212, 151);
-  background-color: rgba(171, 212, 151);
+  border: 3px solid;
   padding: 4px;
   font-size: 14px;
 }
 
 .study_submit_btn {
   color: white;
-  background-color: rgba(171, 212, 151);
   text-align: right;
   position: absolute;
   right: 7px;
@@ -617,7 +605,7 @@ clear: both;
 .club_poster {
   float: left;
   width: 180px;
-  border: 1px solid  rgba(171, 212, 151);
+  border: 1px solid;
   margin-top: 18px;
   padding: 10px;
   margin-right: -1px;
@@ -632,7 +620,7 @@ clear: both;
 .club_poster_info {
   float: left;
   width: 540px;
-  border: 1px solid rgba(171, 212, 151);
+  border: 1px solid;
   padding: 20px;
   position: relative;
   margin-top: 18px;
@@ -649,7 +637,6 @@ clear: both;
   font-size: 12px;
   font-weight: normal;
   vertical-align: middle;
-  background-color: rgba(231, 231, 231);
   border-radius: 7px;
   padding: 4px 7px 4px 7px;
 }
@@ -723,7 +710,6 @@ clear: both;
 }
 
 .poster_submit {
-  background-color: rgba(171, 212, 151);
   color: white;
   position: absolute;
   right: 20px;
@@ -735,7 +721,7 @@ clear: both;
 
 /* 포스터 상세 정보 */
 .poster_details_wrap {
-  border: 1px solid rgba(171, 212, 151);
+  border: 1px solid;
 }
 
 .poster_menu {
@@ -793,7 +779,6 @@ clear: both;
 .comment_wrap {
   margin-top: 20px;
   padding-bottom: 10px;
-  background-color: rgba(231, 231, 231);
   border-radius: 5px;
 }
 
@@ -841,7 +826,6 @@ clear: both;
 }
 
 .inner_comment_wrap {
-  background-color: rgba(231, 231, 231);
   padding: 7px;
   border-radius: 25px;
   position: relative;
@@ -1003,7 +987,6 @@ clear: both;
 }
 
 .comp_board_dday {
-  color: rgba(171, 212, 151);
   font-weight: bold;
   margin-right: 13px;
 }
